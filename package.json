@@ -1,0 +1,23 @@
+{
+  "name": "chat-app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "build": "cd public && npm run build",
+    "server": "DEBUG=chat-app:* nodemon ./bin/www",
+    "desktop": "npm start --prefix public",
+    "dev": "concurrently \"npm:server\" \"npm:desktop\""
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15"
+  }
+}
