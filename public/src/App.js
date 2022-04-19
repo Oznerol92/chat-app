@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react"
 import socketIOClient from "socket.io-client"
 import './App.css'
-const ENDPOINT = "http://localhost:5001"
-const socket = socketIOClient(ENDPOINT)
+const ENDPOINT = "https://tksbalti.uk/"
+const socket = socketIOClient()
 
 function App() {
   const [response, setResponse] = useState("")
